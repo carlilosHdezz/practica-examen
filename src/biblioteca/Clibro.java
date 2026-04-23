@@ -13,10 +13,10 @@ public class CLibro {
     }
 /**
  * indican su título, autor, ejemplares, prestados
- * @param titulo
- * @param autor
- * @param ejemplares
- * @param prestados 
+ * @param titulo para mostrar el nombre del titulo
+ * @param autor para mostrar el autor
+ * @param ejemplares para mostrar los ejemplares 
+ * @param prestados para mostrar los libros prestados
  */
     public CLibro(String titulo, String autor, int ejemplares, int prestados) {
         this.titulo = titulo;
@@ -26,7 +26,7 @@ public class CLibro {
     }
 /**
  *  Realiza el préstamo de una cantidad especifica
- * @param cantidad
+ * @param cantidad parametro para guardar la cantidad de libros
  * @return 
  */
     public boolean prestar(int cantidad) {

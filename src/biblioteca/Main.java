@@ -12,7 +12,7 @@ public class Main {
         operativa_libro(libro1, null);
     }
 /**
- * 
+ * mostrar los datos de lo parametros de Clibro
  * @param libro1
  * @param cantidad 
  */
