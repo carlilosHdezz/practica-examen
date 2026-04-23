@@ -1,5 +1,8 @@
 package biblioteca;
-
+/**
+ * 
+ * @author Carlos
+ */
 public class CLibro {
     private String titulo;
     private String autor;
@@ -8,14 +11,24 @@ public class CLibro {
 
     public CLibro() {
     }
-
+/**
+ * indican su título, autor, ejemplares, prestados
+ * @param titulo
+ * @param autor
+ * @param ejemplares
+ * @param prestados 
+ */
     public CLibro(String titulo, String autor, int ejemplares, int prestados) {
         this.titulo = titulo;
         this.autor = autor;
         this.ejemplares = ejemplares;
         this.prestados = prestados;
     }
-
+/**
+ *  Realiza el préstamo de una cantidad especifica
+ * @param cantidad
+ * @return 
+ */
     public boolean prestar(int cantidad) {
         if ((getPrestados() + cantidad) <= getEjemplares()) {
             prestados = getPrestados() + cantidad;
@@ -24,7 +37,11 @@ public class CLibro {
             return false;
         }
     }
-
+/**
+ * Devuelve una cantidad de ejemplares
+ * @param cantidad
+ * @return 
+ */
     public boolean devolver(int cantidad) {
         if ((getPrestados() - cantidad) >= 0) {
             prestados = getPrestados() - cantidad;
@@ -33,7 +50,9 @@ public class CLibro {
             return false;
         }
     }
-
+/**
+ * muestra los datos DE LOS PARAMATROS
+ */
     public void mostrarEstado() {
         System.out.println("Título: " + getTitulo());
         System.out.println("Autor: " + getAutor());

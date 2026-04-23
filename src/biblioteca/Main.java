@@ -1,14 +1,21 @@
 package biblioteca;
 
 public class Main {
-
+/**
+ * 
+ * @param args 
+ */
     public static void main(String[] args) {
         CLibro libro1;
         libro1 = new CLibro("El Quijote", "Miguel de Cervantes", 10, 2);
 
         operativa_libro(libro1, null);
     }
-
+/**
+ * 
+ * @param libro1
+ * @param cantidad 
+ */
     private static void operativa_libro(CLibro libro1, int cantidad) {
         libro1.mostrarEstado();
         libro1.prestar(2);
